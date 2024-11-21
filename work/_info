@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/muril/NanoCPU_AlunoV0
+Enanocpu
+Z1 w1732197866
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8nanoCPU.vhd
+Z7 FnanoCPU.vhd
+l0
+L42
+V9CHccDC1;IETkBU`1REo21
+!s100 m^edn^DJ]GgScaoKN6@Fh1
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1732197872
+!i10b 1
+Z10 !s108 1732197872.000000
+Z11 !s90 -reportprogress|300|nanoCPU.vhd|
+Z12 !s107 nanoCPU.vhd|
+!i113 1
+Z13 tExplicit 1 CvgOpt 0
+Ancpu
+Z14 DEx4 work 8 reg16bit 0 22 BBCh8XDoimkfH[kCgcFC40
+R2
+R3
+R4
+R5
+Z15 DEx4 work 7 nanocpu 0 22 9CHccDC1;IETkBU`1REo21
+l70
+L53
+V6VnIDXA1maWeH`IH]KQ<z2
+!s100 YS0PT;el6@X[]m>f:Dj5a3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Enanocpu_tb
+Z16 w1732197620
+R3
+R2
+R4
+R5
+R0
+Z17 8nanoTB.vhd
+Z18 FnanoTB.vhd
+l0
+L6
+Vozd3DjmoARXg`f0a3Va6Y2
+!s100 ]HlS7lDH?jDaEVgB_?7[40
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|nanoTB.vhd|
+Z20 !s107 nanoTB.vhd|
+!i113 1
+R13
+Atb
+R15
+R3
+R2
+R4
+R5
+DEx4 work 10 nanocpu_tb 0 22 ozd3DjmoARXg`f0a3Va6Y2
+l37
+L9
+Vk67;lPD=1GcEhYan=e3]83
+!s100 =LM6_XMb2UWXf^o3gT[zG1
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+Ereg16bit
+R1
+R4
+R5
+R0
+R6
+R7
+l0
+L12
+VBBCh8XDoimkfH[kCgcFC40
+!s100 URVO=z=`EcPA4l5zK7]0M2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Areg16b
+R4
+R5
+R14
+l22
+L21
+V6o=aRWmJ?WzbDZN@=BlHS0
+!s100 4O]<S2e1KOO1^Q@f5?XLb0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
