@@ -78,7 +78,7 @@ begin
 	dataW <= outalu;
 	address <= PC(7 downto 0) when state = sFETCH else ir(11 downto 4);
 	ce <= '1';   -- always enabled
-	we <= '0';   -- complete
+	we <= '1' when state = sWRITE else '0';   -- complete
    
 	-- register bank - 4 general purpose registers
 	-- 
@@ -122,13 +122,16 @@ begin
    --++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	inst <=	iREAD when ir(15 downto 12) = x"0" else    -- decode the current instruction
+			iWRITE when ir(15 downto 12) = x"1" else
+			iJMP when ir(15 downto 12) = x"2" else
+			iBRANCH when ir(15 downto 12) = x"3" else
 			iXOR when ir(15 downto 12) = x"4" else
 			iSUB when ir(15 downto 12) = x"5" else
 			iADD when ir(15 downto 12) = x"6" else
 			iLESS when ir(15 downto 12) = x"7" else
 			iEND;
 
-	wPC <= '1' when state = sREAD or state = sALU
+	wPC <= '1' when state = sREAD or state = sALU or state = sWRITE
 		else '0';
 	wReg <= '1' when state = sREAD or state = sALU 
 		else '0';
@@ -147,9 +150,11 @@ begin
 						state <= sEND;
 					elsif inst = iREAD then
 						state <= sREAD;
+					elsif inst = iWRITE then
+						state <= sWRITE;
 					else
 						state <= sALU;
-					end if;
+					end if;	
 				when sEND =>
 					state <= sEND;
 				when others =>
